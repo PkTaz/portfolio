@@ -149,7 +149,7 @@
   width: 250px;  /* Set the same width for all images */
   height: 250px; /* Set the same height for all images */
   object-fit: cover; /* Ensure the images fit the container without distortion */
-  border-radius: 250px; /* Optional: round the corners */
+  border-radius: 225px; /* Optional: round the corners */
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
