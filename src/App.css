@@ -140,7 +140,7 @@
 
 .image-row {
   display: flex;
-  margin-left: 4%;
+  margin-left: 5%;
   gap: 12%; /* Add space between the images */
   margin-top: 25%; /* Adjust top margin as needed */
 }

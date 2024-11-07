@@ -16,10 +16,6 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-      <img 
-          src={`${process.env.PUBLIC_URL}/assets/wgu_seal.png`} 
-          alt="Header" 
-          className="header-image"></img>
         <nav className="navbar">
           <ul className="nav-list">
             <li className="nav-item">
