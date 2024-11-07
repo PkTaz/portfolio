@@ -15,19 +15,55 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className="greeting">{greeting}</h2> {/* Greeting above William Chapman */}
-      <h1 className="centered-text">{letters}</h1> {/* William Chapman */}
-      <h2 className="title">{title}</h2>
-      <p className="bio">{bio}</p>
+      <header className="header">
+      <img 
+          src={`${process.env.PUBLIC_URL}/assets/wgu_seal.png`} 
+          alt="Header" 
+          className="header-image"></img>
+        <nav className="navbar">
+          <ul className="nav-list">
+            <li className="nav-item">
+              <a href="#home" className="nav-link">Home</a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects" className="nav-link">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a href="#about" className="nav-link">About</a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" className="nav-link">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="home">
+        <h2 className="greeting">{greeting}</h2>
+        <h1 className="centered-text">{letters}</h1> {/* Ensure the letters are rendered with animation */}
+        <h2 className="title">{title}</h2>
+        <p className="bio">{bio}</p>
+      </section>
+      <button className="hire-button">Hire Me!</button> {/* Hire Me! Button */}
       <img 
         src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} 
         alt="Profile" 
         className="profile-image" 
       />
-      <button className="hire-button">Hire Me!</button> {/* Hire Me! Button */}
+<div className="image-row">
+  <img src={`${process.env.PUBLIC_URL}/assets/certL2.png`}  alt="certificate 1" className="image" />
+  <img src={`${process.env.PUBLIC_URL}/assets/certL1.png`} alt="certificate 2" className="image" />
+  <img src={`${process.env.PUBLIC_URL}/assets/certR1.png`} alt="certificate 3" className="image" />
+  <img src={`${process.env.PUBLIC_URL}/assets/certR2.png`} alt="certificate 4" className="image" />
+</div>
     </div>
-    
+
   );
 }
 
 export default App;
+
+
+
+
+
