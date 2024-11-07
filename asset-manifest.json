@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PkTaz/portfolio.git/static/css/main.ccdae173.css",
+    "main.js": "/PkTaz/portfolio.git/static/js/main.1e1723dd.js",
+    "static/js/453.acca0757.chunk.js": "/PkTaz/portfolio.git/static/js/453.acca0757.chunk.js",
+    "index.html": "/PkTaz/portfolio.git/index.html",
+    "main.ccdae173.css.map": "/PkTaz/portfolio.git/static/css/main.ccdae173.css.map",
+    "main.1e1723dd.js.map": "/PkTaz/portfolio.git/static/js/main.1e1723dd.js.map",
+    "453.acca0757.chunk.js.map": "/PkTaz/portfolio.git/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccdae173.css",
+    "static/js/main.1e1723dd.js"
+  ]
+}
