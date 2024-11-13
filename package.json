@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
+  "homepage": "https://pktaz.github.io/portfolio/",
   "main": "index.js",
   "dependencies": {
     "abab": "^2.0.6",
@@ -276,7 +277,6 @@
     "get-package-type": "^0.1.0",
     "get-stream": "^6.0.1",
     "get-symbol-description": "^1.0.2",
-    "gh-pages": "^6.2.0",
     "glob": "^7.2.3",
     "glob-parent": "^6.0.2",
     "glob-to-regexp": "^0.4.1",
@@ -849,6 +849,8 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -869,5 +871,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
