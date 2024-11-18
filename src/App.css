@@ -2,18 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .App {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   justify-content: center; /* Center horizontally */
-  background-color: #282c34; /* Dark background */
+  background: #000; /* Dark background */
   padding: 0 10px; /* Some padding for smaller screens */
   font-family: "Martian Mono", monospace;
+
 }
 
 body {
-  background-color: #282c34;
+  background: #000;
 }
+
 
 .header-image {
   position: absolute;
@@ -28,7 +31,7 @@ body {
   display: flex; /* Use flexbox to align the items horizontally */
   justify-content: center; /* Center the nav items */
   align-items: center; /* Vertically align the nav items */
-  margin-left: 50%;
+  margin-left: 48%;
 }
 
 .nav-list {
@@ -44,16 +47,18 @@ body {
 }
 
 .nav-link {
-  font-family: "Martian Mono", monospace; ;
+  font-family: "Martian Mono", monospace;
   font-size: 1.5rem;
   color: white; /* Set the link text color */
-  text-decoration: none; /* Remove the underline from links */ /* Set a font size */
+  text-decoration: none; /* Remove the underline from links */
   font-weight: bold; /* Make the text bold */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  display: inline-block; /* Ensure transform applies correctly */
+  transition: color 0.5s ease, transform 0.3s ease; /* Combine transitions */
 }
 
 .nav-link:hover {
-  color:  #98ff98; /* Change color on hover to mint green (theme color) */
+  color: #98ff98; /* Change color on hover to mint green (theme color) */
+  transform: scale(1.3); /* Smooth transition for a subtle zoom effect */
 }
 
 .centered-text {
@@ -76,7 +81,7 @@ body {
   margin-top: 13%;
 }
 
-.title {
+.jobtitle {
   font-size: rem; /* Adjust font size for the greeting */
   font-family: "Martian Mono", monospace;
   color: white;
@@ -115,7 +120,7 @@ body {
   border-style: solid;
   border-width: 8px;
   animation: pulseGlow 2s infinite alternate; /* Breathing effect */
-  margin-top: -125%;
+  margin-top: -195%;
 }
 
 .hire-button {
@@ -134,7 +139,105 @@ body {
   text-align: center; /* Center the text */
   margin-left: 4%;
   margin-top: -5%;
-  margin-bottom: -15%;
+  margin-bottom: 10%;
+}
+
+.cardcontainer {
+  margin-top: 45%;
+  position: absolute;
+  height: 300px;
+  width: 1500px;
+  top: 60px;
+  left: calc(18% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -0.5rem 0 1rem #99fd99;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgb(7, 217, 0) 0%, rgb(14, 217, 0) 65%, rgb(34, 255, 0) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 100%;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
 }
 
 .hire-button:hover {
@@ -145,6 +248,21 @@ body {
 .hire-button:focus {
   outline: none; /* Remove focus outline */
 }
+
+.title2 {
+  color: #98ff98;
+  margin-top: -3%;
+  margin-left: 4%;
+  letter-spacing: 2px; /* Adds spacing between the letters */
+  animation-delay: 0.5s; /* Slight delay for animation */
+}
+
+.L-icon {
+  width: 150px;  /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: contain; /* Ensures images scale without distortion */
+}
+
 
 .crm-button {
   padding: 10px 10px; /* Adjust the padding to make the button smaller */
@@ -173,11 +291,66 @@ body {
   outline: none; /* Remove focus outline */
 }
 
+.web-button {
+  padding: 10px 10px; /* Adjust the padding to make the button smaller */
+  background-color: #1f2228; /* Mint green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 50px; /* Pill shape */
+  font-size: 1rem; /* Smaller font size */
+  font-family: "Martian Mono", monospace; /* Matching font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; /* Subtle glow */
+  max-width: 200px; /* Limit the maximum width of the button */
+  width: auto; /* Make the width auto-adjust to the content */
+  text-align: center; /* Center the text */
+  margin-left: -28.5%;
+  margin-top: 3%;
+}
+
+.web-button:hover {
+  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; /* Glowing effect on hover */
+  transform: scale(1.2); /* Slight scale up effect on hover */
+}
+
+.web-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.cotw-button {
+  position: absolute;
+  padding: 10px 10px; /* Adjust the padding to make the button smaller */
+  background-color: #1f2228; /* Mint green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 50px; /* Pill shape */
+  font-size: 1rem; /* Smaller font size */
+  font-family: "Martian Mono", monospace; /* Matching font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; /* Subtle glow */
+  max-width: 200px; /* Limit the maximum width of the button */
+  width: auto; /* Make the width auto-adjust to the content */
+  text-align: center; /* Center the text */
+  margin-top: 78%;
+  margin-left: 10%;
+}
+
+.cotw-button:hover {
+  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; /* Glowing effect on hover */
+  transform: scale(1.2); /* Slight scale up effect on hover */
+}
+
+.cotw-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
 
 .image-row {
   display: flex;
   gap: 12%; /* Add space between the images */
-  margin-top: 25%; /* Adjust top margin as needed */
+  margin-top: 30%; /* Adjust top margin as needed */
   margin-bottom: 5%;
 }
 
@@ -209,7 +382,7 @@ body {
   width: 425px;  /* Set the same width for all images */
   height: 400px; /* Set the same height for all images */
   object-fit: cover; /* Ensure the images fit the container without distortion */
-  border-radius: 225px; /* Optional: round the corners */
+  border-radius: 200px; /* Optional: round the corners */
   margin-top: 17%; 
   margin-left: 2%;
   animation: pulseGlow 6s infinite alternate; /* Breathing effect */
@@ -223,7 +396,7 @@ body {
   text-align: left;
   color: #fff;  /* Adjust the text color */
   margin-left: 36%; /* Adjust if necessary */
-  margin-top: -90%;
+  margin-top: -95%;
   animation: colorChange 1s forwards;
   letter-spacing: 2px; /* Adds spacing between the letters */
   animation-delay: 0.5s; /* Slight delay for animation */
@@ -349,8 +522,8 @@ body {
   font-family: "Martian Mono", monospace;
   position: absolute;
   margin-left: 35%;
-  color: #1f2228;
   margin-top: 48%;
+  color: #1f2228;
   animation: pulseTGlow 2.5s ease-out infinite;
 }
 
@@ -358,7 +531,7 @@ body {
   position: absolute;
   font-family: "Martian Mono", monospace;
   font-size: 1.5rem;
-  color: white; /* Initial text color */
+  color: white; 
   margin-left: 30%;
   margin-top: 51%;
 }
@@ -366,10 +539,10 @@ body {
 .scroll-container2 {
   position: absolute;
   width: 20%;
-  height: 10%; /* Set the container height to make it smaller */
+  height: 10%; 
   overflow: hidden;
-  color: #fff; /* White text */
-  font-size: 1rem; /* Adjust font size as needed */
+  color: #fff;
+  font-size: 1rem; 
   margin-left: 39%;
   margin-top: 50.20%;
 }
@@ -434,7 +607,7 @@ body {
   font-size: 2.5rem;
   font-family: "Martian Mono", monospace;
   position: absolute;
-  margin-left: 35%;
+  margin-left: 30%;
   color: #1f2228;
   margin-top: 87%;
   animation: pulseTGlow 2.5s ease-out infinite;
@@ -444,7 +617,7 @@ body {
   position: absolute;
   font-family: "Martian Mono", monospace;
   font-size: 1.5rem;
-  color: white; /* Initial text color */
+  color: white; 
   margin-left: 30%;
   margin-top: 90%;
 }
@@ -452,10 +625,10 @@ body {
 .scroll-container3 {
   position: absolute;
   width: 20%;
-  height: 10%; /* Set the container height to make it smaller */
+  height: 10%; 
   overflow: hidden;
-  color: #fff; /* White text */
-  font-size: 1rem; /* Adjust font size as needed */
+  color: #fff; 
+  font-size: 1rem; 
   margin-left: 39%;
   margin-top: 89.2%;
 }
@@ -488,6 +661,112 @@ body {
   margin-bottom: 10px;
   color: #ffffff;
   margin-top: 8%;
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.container {
+  position: relative;
+  top: -80px;
+  transform: skewY(-20deg);
+  animation: animate 5s linear infinite;
+
+  .cube {
+    position: relative;
+    z-index: 2;
+
+    &:nth-child(2) {
+      z-index: 1;
+      translate: -30px -30px; 
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+      translate: 30px 30px; 
+    }
+
+    div {
+      margin-top: -45%;
+      margin-left: 10%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 8px; 
+      translate: calc(-40px * var(--x)) calc(-30px * var(--y)); 
+      
+      span {
+        position: relative;
+        display: inline-block;
+        width: 30px;  
+        height: 30px; 
+        background: #dcdcdc;
+        z-index: calc(1 * var(--i));
+        transition: 5.0s;
+        
+        &:hover {
+          transition: 0s;
+          background: #ef4149;
+          filter: drop-shadow(0 0 30px #ef4149);
+          
+          &:before, 
+          &:after {
+            transition: -5s;
+            background: #ef4149;
+          }
+        }
+        
+        &:before {
+          content: "";
+          position: absolute;
+          left: -20px; 
+          width: 20px; 
+          height: 100%;
+          background: #fff;
+          transform-origin: right;
+          transform: skewY(45deg);
+          transition: 3.5s;
+        }
+        
+        &:after {
+          content: "";
+          position: absolute;
+          top: -20px; /* Adjusted for even smaller size */
+          left: 0px;
+          width: 100%;
+          height: 20px; /* Adjusted for even smaller size */
+          background: #f2f2f2;
+          transform-origin: bottom;
+          transform: skewX(45deg);
+          transition: 2.5s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
 }
 
 
@@ -551,4 +830,5 @@ body {
     font-size: 1.5rem; /* Smaller greeting font */
   }
 }
+
 

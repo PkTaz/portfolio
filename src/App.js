@@ -1,4 +1,10 @@
 import './App.css';
+import './Footer.css';
+import MyComponent from './Cube.js';
+import Footer from './Footer.js';
+import Contact from './Contact.js';
+import Lcards from './Languages.js';
+import Header from './Header.js';
 
 function App() {
   const name = "William Chapman";
@@ -7,6 +13,7 @@ function App() {
   const bio = "I’m deeply passionate about using technology to drive meaningful change. With a strong focus on understanding the needs of customers, I work to create solutions that not only address their immediate challenges but also anticipate future needs. My approach is always impact-driven, and I believe in delivering thoughtful, compassionate solutions that make a real difference in people’s lives. By combining technical expertise with a customer-first mindset, I strive to build systems that truly resonate and add value to those who use them.";
   const certH2 = "Certifications";
   const projects = "Projects";
+  const title2 = "Programming Languages & Frameworks"
   const certTitle = certH2.split("").map((certTitle, index) => (
     <span key={index} className="letter" style={{ animationDelay: `${index * 0.2}s` }}>
       {certTitle === " " ? "\u00A0" : certTitle} 
@@ -22,31 +29,25 @@ function App() {
       {projectsStyle === " " ? "\u00A0" : projectsStyle} 
     </span>
   ));
-
+const titleStyle = title2.split("").map((titleStyle, index) => (
+  <span key={index} className="letter" style={{ animationDelay: `${index * 0.1}s` }}>
+    {titleStyle === " " ? "\u00A0" : titleStyle}
+  </span>
+));
   return (
     <div className="App">
-      <header className="header">
-        <nav className="navbar">
-          <ul className="nav-list">
-            <li className="nav-item"><a href="#home" className="nav-link">Home</a></li>
-            <li className="nav-item"><a href="#projects" className="nav-link">Projects</a></li>
-            <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
-            <li className="nav-item"><a href="#contact" className="nav-link">Contact Me</a></li>
-          </ul>
-        </nav>
-      </header>
-
+      <Header />
       <section id="home" className="home-section">
         <h2 className="greeting">{greeting}</h2>
         <h1 className="centered-text">{letters}</h1>
-        <h2 className="title">{title}</h2>
+        <h2 className="jobtitle">{title}</h2>
         <p className="bio">{bio}</p>
       </section>
-
+      <MyComponent />
       <button className="hire-button">Hire Me!</button>
-
+      <h2 className='title2'>{titleStyle}</h2>
       <img src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} alt="Profile" className="profile-image" />
-
+      <Lcards />
       <h2 className="certH2">{certTitle}</h2>
       <div className="image-row">
         <img src={`${process.env.PUBLIC_URL}/assets/certL2.png`} alt="certificate 1" className="image" />
@@ -104,8 +105,14 @@ function App() {
     </li>
   </ul>
 </div>
+<button 
+        className="cotw-button" 
+        onClick={() => window.open("https://pktaz.github.io/Countries-of-The-World/world", "_blank")}
+      >
+        View App
+      </button>
 <div>
-    <h1 className="project-head3">Costa Rica Website</h1>
+    <h1 className="project-head3">New Hue Restoration + Design</h1>
       </div>
         <h2 className="languages2">Languages: </h2>
       <div className="scroll-container3">
@@ -114,22 +121,30 @@ function App() {
 <div className="project-details3">
 <ul className="project-bullets3">
   <li>
-    Designed and developed a visually engaging, <span className="highlight2">responsive website</span> for a Costa Rica villa resort, tailored to attract international travelers and showcase the resort’s unique offerings.
+  <span className='highlight2'>Design and Developed</span> a visually engaging, <span className="highlight2">responsive website</span> for a Conracting company specialized in Restoration and Design. Updating <span className='highlight2'>forms</span>, <span className='highlight2'>projects</span> page, and even the <span className='highlight2'>landing</span> page.
   </li>
   <li className="pushed-paragraph">
-    Implemented an <span className="highlight2">automated booking system</span> with a <span className="highlight2">dynamic calendar</span>, allowing for <span className="highlight2">real-time pricing adjustments</span> and eliminating the need for manual quoting, improving <span className="highlight2">operational efficiency</span>.
+    <span className="highlight2">Rebuilt the projects page,</span> enhancing visual appeal and navigation to showcase completed projects with a <span className="highlight2">responsive</span>, portfolio-style layout.<span className="highlight2"></span>
   </li>
   <li>
-    Built <span className="highlight2">custom user interface elements</span> that simplify the reservation process, providing an <span className="highlight2">intuitive experience</span> for potential guests from initial browsing to booking.
+    Built <span className="highlight2">custom user interface elements</span> that simplify the work requesting process, providing an <span className="highlight2">intuitive experience</span> for potential clients from initial browsing to booking a work request.
   </li>
 </ul>
+<button 
+        className="web-button" 
+        onClick={() => window.open("https://pktaz.github.io/Contracting-Company/", "_blank")}
+      >
+        View Design
+      </button>
 </div>
-          <img src={`${process.env.PUBLIC_URL}/assets/project1.jpg`} alt="certificate 1" className="image2" />
-          <img src={`${process.env.PUBLIC_URL}/assets/project2.gif`} alt="certificate 2" className="image2" />
-          <img src={`${process.env.PUBLIC_URL}/assets/project3.jpg`} alt="certificate 3" className="image2" />
-        </div>
-      </div>
-    );
+  <img src={`${process.env.PUBLIC_URL}/assets/project1.jpg`} alt="certificate 1" className="image2" />
+  <img src={`${process.env.PUBLIC_URL}/assets/project2.gif`} alt="certificate 2" className="image2" />
+  <img src={`${process.env.PUBLIC_URL}/assets/project3.png`} alt="certificate 3" className="image2" />
+  </div>
+  <Contact />
+  <Footer />
+    </div>
+  );
 }
 
 export default App;
