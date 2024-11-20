@@ -120,7 +120,7 @@ body {
   border-style: solid;
   border-width: 8px;
   animation: pulseGlow 2s infinite alternate; /* Breathing effect */
-  margin-top: -195%;
+  margin-top: -205%;
 }
 
 .hire-button {
@@ -396,7 +396,7 @@ svg {
   text-align: left;
   color: #fff;  /* Adjust the text color */
   margin-left: 36%; /* Adjust if necessary */
-  margin-top: -95%;
+  margin-top: -105%;
   animation: colorChange 1s forwards;
   letter-spacing: 2px; /* Adds spacing between the letters */
   animation-delay: 0.5s; /* Slight delay for animation */
