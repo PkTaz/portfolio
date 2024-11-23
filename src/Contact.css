@@ -1,73 +1,75 @@
 .card2 {
-  background-color: #1f2228; /* Dark gray for the card */
-  width: 400px; /* Increased width to accommodate side-by-side layout */
+  background-color: #1f2228; 
+  width: 400px; 
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  margin: 10% auto; /* Center card horizontally */
+  margin: 10% auto; 
+  font-family: "Martian Mono";
 }
 
 .card2:hover {
-  transform: scale(1.1); /* Enlarge on hover */
-  box-shadow: 0 15px 30px rgba(0, 255, 150, 0.7); /* Mint glow */
+  transform: scale(1.1); 
+  box-shadow: 0 15px 30px rgba(0, 255, 150, 0.7); 
 }
 
 .card-content2 {
   display: flex;
   flex-direction: column;
-  gap: 50px; /* Space between profile sections */
+  gap: 50px; 
 }
 
 .profile-section2 {
-  display: flex; /* Align image and link side by side */
-  align-items: center; /* Center vertically */
-  gap: 7px; /* Space between image and link */
+  display: flex; 
+  align-items: center; 
+  gap: 7px; 
 }
 
 .profile-image2 {
   width: 80px;
   height: 80px;
-  border-radius: 50%; /* Circular images */
-  border: 3px solid #98ff98; /* Mint border */
+  border-radius: 50%; 
+  border: 3px solid #98ff98; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-image2:hover {
-  transform: scale(1.2); /* Enlarge on hover */
-  box-shadow: 0 5px 15px rgba(0, 255, 150, 0.6); /* Mint glow */
+  transform: scale(1.2); 
+  box-shadow: 0 5px 15px rgba(0, 255, 150, 0.6); 
 }
 
 .profile-link2 {
-  color: #98ff98; /* Mint color */
+  color: #98ff98; 
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
-  text-align: center; /* Center text within its container */
+  text-align: center; 
   transition: color 0.3s ease;
 }
 
 .profile-link2:hover {
-  color: #fff; /* White on hover */
+  color: #fff;
 }
 
 .phone-number {
+  font-family: 'Montserrat' sans-serif;
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  color: rgb(7, 217, 0); /* Match the bar gradient's starting color */
-  margin-right: -60%;
-  margin-top: -33%; /* Space between the number and the bar */
-  text-shadow: 0 0 5px rgba(7, 217, 0, 0.7), 0 0 10px rgba(14, 217, 0, 0.5); /* Glow effect */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(-10px); /* Slightly offset */
-  transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade and slide */
+  color: rgb(7, 217, 0); 
+  margin-right: -62%;
+  margin-top: -33%; 
+  text-shadow: 0 0 5px rgba(7, 217, 0, 0.7), 0 0 10px rgba(14, 217, 0, 0.5); 
+  opacity: 0; 
+  transform: translateY(-10px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
 }
 
 .card2:hover .phone-number {
-  opacity: 1; /* Make visible on hover */
-  transform: translateY(0); /* Slide into place */
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
 .bar2 {
@@ -81,7 +83,7 @@
 }
 
 .emptybar2 {
-  background-color: #2e3033; /* Matches the bar background */
+  background-color: #2e3033; 
   width: 100%;
   height: 100%;
 }
@@ -96,19 +98,18 @@
     rgb(7, 217, 0) 0%,
     rgb(14, 217, 0) 65%,
     rgb(34, 255, 0) 100%
-  ); /* Mint gradient */
-  width: 0%; /* Start as empty */
-  transition: width 0.4s ease-out; /* Smooth animation */
+  ); 
+  width: 0%; 
+  transition: width 0.4s ease-out; 
 }
 
 .card2:hover .filledbar2 {
-  width: 100%; /* Fills the bar on hover */
+  width: 100%;
 }
 
 .contact-letters-container {
   margin-left: 100%;
   margin-top: -100%;
-  opacity: 1;
 }
 
 .contact-letters-container div {
@@ -129,8 +130,4 @@
   100% {
     text-shadow: 0 0 3px #98ff98, 0 0 5px #98ff98, 0 0 7px #98ff98;
   }
-}
-
-.card2:hover .contact-letters-container div {
-  opacity: 0; 
 }

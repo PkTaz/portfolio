@@ -13,7 +13,7 @@ function App() {
   const bio = "I’m deeply passionate about using technology to drive meaningful change. With a strong focus on understanding the needs of customers, I work to create solutions that not only address their immediate challenges but also anticipate future needs. My approach is always impact-driven, and I believe in delivering thoughtful, compassionate solutions that make a real difference in people’s lives. By combining technical expertise with a customer-first mindset, I strive to build systems that truly resonate and add value to those who use them.";
   const certH2 = "Certifications";
   const projects = "Projects";
-  const title2 = "Programming Languages & Frameworks"
+  const title2 = "Programming Languages & Frameworks "
   const certTitle = certH2.split("").map((certTitle, index) => (
     <span key={index} className="letter" style={{ animationDelay: `${index * 0.2}s` }}>
       {certTitle === " " ? "\u00A0" : certTitle} 
@@ -44,7 +44,7 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
         <p className="bio">{bio}</p>
       </section>
       <MyComponent />
-      <button className="hire-button">Hire Me!</button>
+      <button className="hire-button"><a className="hire-style" href="mailto:chapmanw@repaired">Hire Me!</a></button>
       <h2 className='title2'>{titleStyle}</h2>
       <img src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} alt="Profile" className="profile-image" />
       <Lcards />
@@ -59,17 +59,18 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
         <div>
           <h2 className="projectsStyle" id='projects'>{projectsStyle}</h2>
         </div>
+        <div className='body-font'>
         <div>
           <h1 className="project-head1">CRM Software Redesign</h1>
         </div>
-        <h2 className="technology">Technologies: </h2>
+        <h2 className="technology">Technologies</h2>
         <div className="scroll-container">
-          <h3 className="scroll-text">AWS RDS, AWS S3, AWS Lambda, Amazon QuickSight</h3>
+          <h3 className="scroll-text">AWS RDS - AWS S3 - AWS Lambda - AWS QuickSight</h3>
         </div>
         <div className="project-details">
         <ul className="project-bullets">
           <li>
-            <strong>Proposed a scalable CRM system</strong> for a logistics company, leveraging <span className="aws-service">Amazon RDS</span> for database management, <span className="aws-service">Amazon S3</span> for scalable storage, and <span className="aws-service">AWS Lambda</span> for serverless computing, designed to support up to 500 concurrent users and handle an average of 2,000 daily user interactions.
+            <strong>Proposed a scalable CRM system</strong> for MJ gaming logistics company, leveraging <span className="aws-service">Amazon RDS</span> for database management, <span className="aws-service">Amazon S3</span> for scalable storage, and <span className="aws-service">AWS Lambda</span> for serverless computing, designed to support up to 500 concurrent users and handle an average of 2,000 daily user interactions.
           </li>
           <li className="pushed-paragraph">
             <strong>Developed a CRM solution</strong> in response to the company's need for scalability following a 42% increase in sales the previous year. This solution utilized <span className="aws-service">Amazon RDS</span> to handle growing customer data, <span className="aws-service">Amazon S3</span> for secure and scalable storage, and <span className="aws-service">AWS Lambda</span> to ensure efficient user interactions while supporting future business expansion.
@@ -82,15 +83,15 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
         className="button crm-button" 
         onClick={() => window.open("https://docs.google.com/document/d/19SlGq47Lvz6FjakNmUhr8yz57Cz8VCHI/edit?usp=sharing&ouid=115633295017463972231&rtpof=true&sd=true", "_blank")}
       >
-        View CRM
+        View CRM Project Overview
       </button>
         </div>
         <div>
           <h1 className="project-head2">Countries of The World</h1>
         </div>
-        <h2 className="languages">Languages: </h2>
+        <h2 className="languages">Languages</h2>
         <div className="scroll-container2">
-          <h3 className="scroll-text2">Angular🚀, Node.js🐸, JavaScript🟡, TypeScript🔵</h3>
+          <h3 className="scroll-text2">Angular🚀 Node.js🐸 JavaScript🟡 TypeScript🔵</h3>
         </div>
         <div className="project-details2">
   <ul className="project-bullets2">
@@ -114,9 +115,9 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
 <div>
     <h1 className="project-head3">New Hue Restoration + Design</h1>
       </div>
-        <h2 className="languages2">Languages: </h2>
+        <h2 className="languages2">Languages</h2>
       <div className="scroll-container3">
-        <h3 className="scroll-text2">HTML🔵, CSS🐸, JavaScript🟡</h3>
+        <h3 className="scroll-text2">HTML🔵 CSS🐸 JavaScript🟡</h3>
       </div>
 <div className="project-details3">
 <ul className="project-bullets3">
@@ -130,6 +131,7 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
     Built <span className="highlight2">custom user interface elements</span> that simplify the work requesting process, providing an <span className="highlight2">intuitive experience</span> for potential clients from initial browsing to booking a work request.
   </li>
 </ul>
+</div>
 <button 
         className="web-button" 
         onClick={() => window.open("https://pktaz.github.io/Contracting-Company/", "_blank")}

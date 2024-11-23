@@ -1,33 +1,33 @@
  .navbar {
-    display: flex; /* Use flexbox to align the items horizontally */
-    justify-content: center; /* Center the nav items */
-    align-items: center; /* Vertically align the nav items */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     margin-left: 48%;
   }
   
   .nav-list {
-    list-style-type: none; /* Remove the bullet points */
-    padding: 0; /* Remove any padding */
-    margin: 0; /* Remove any margin */
-    display: flex; /* Display list items horizontally */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
     margin-top: 3%;
   }
   
   .nav-item {
-    margin: 0 60px; /* Add spacing between the nav items */
+    margin: 0 60px; 
   }
   
   .nav-link {
     font-family: "Martian Mono", monospace;
     font-size: 1.5rem;
-    color: white; /* Set the link text color */
-    text-decoration: none; /* Remove the underline from links */
-    font-weight: bold; /* Make the text bold */
-    display: inline-block; /* Ensure transform applies correctly */
-    transition: color 0.5s ease, transform 0.3s ease; /* Combine transitions */
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.5s ease, transform 0.3s ease;
   }
   
   .nav-link:hover {
-    color: #98ff98; /* Change color on hover to mint green (theme color) */
-    transform: scale(1.3); /* Smooth transition for a subtle zoom effect */
+    color: #98ff98;
+    transform: scale(1.3); 
   }

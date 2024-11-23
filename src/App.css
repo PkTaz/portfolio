@@ -5,11 +5,11 @@ html {
 
 .App {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center horizontally */
-  background: #000; /* Dark background */
-  padding: 0 10px; /* Some padding for smaller screens */
-  font-family: "Martian Mono", monospace;
+  flex-direction: column; 
+  justify-content: center; 
+  background: #000;
+  padding: 0 10px;
+  
 
 }
 
@@ -26,406 +26,321 @@ body {
   height: 20%;
 }
 
-/* Navbar styling */
+
 .navbar {
-  display: flex; /* Use flexbox to align the items horizontally */
-  justify-content: center; /* Center the nav items */
-  align-items: center; /* Vertically align the nav items */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   margin-left: 48%;
 }
 
 .nav-list {
-  list-style-type: none; /* Remove the bullet points */
-  padding: 0; /* Remove any padding */
-  margin: 0; /* Remove any margin */
-  display: flex; /* Display list items horizontally */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
   margin-top: 3%;
 }
 
 .nav-item {
-  margin: 0 60px; /* Add spacing between the nav items */
+  margin: 0 60px;
 }
 
 .nav-link {
   font-family: "Martian Mono", monospace;
   font-size: 1.5rem;
-  color: white; /* Set the link text color */
-  text-decoration: none; /* Remove the underline from links */
-  font-weight: bold; /* Make the text bold */
-  display: inline-block; /* Ensure transform applies correctly */
-  transition: color 0.5s ease, transform 0.3s ease; /* Combine transitions */
+  color: white;
+  text-decoration: none; 
+  font-weight: bold; 
+  display: inline-block; 
+  transition: color 0.5s ease, transform 0.3s ease; 
 }
 
 .nav-link:hover {
-  color: #98ff98; /* Change color on hover to mint green (theme color) */
-  transform: scale(1.3); /* Smooth transition for a subtle zoom effect */
+  color: #98ff98;
+  transform: scale(1.3); 
 }
 
 .centered-text {
-  color: white; /* White text */
-  font-size: 4rem; /* Adjust font size as needed */
+  color: white; 
+  font-size: 4rem; 
   font-family: "Martian Mono", monospace;
-  letter-spacing: 6px; /* Adjust the space between letters */
+  letter-spacing: 6px; 
   margin-left: 3%;
-  margin-top: 20px; /* Add some space above */
-  margin-bottom: 3px; /* Add space below the name */
+  margin-top: 20px; 
+  margin-bottom: 3px;
 }
 
 .greeting {
-  font-size: 2rem; /* Adjust font size for the greeting */
+  font-size: 2rem; 
   font-family: "Martian Mono", monospace;
   color: white;
   margin-left: 4%;
-  margin-bottom: -10px; /* Add space below the greeting */
-  animation: fadeIn 1s ease-out; /* Add fade-in effect for greeting */
+  margin-bottom: -10px; 
+  animation: fadeIn 1s ease-out; 
   margin-top: 13%;
 }
 
 .jobtitle {
-  font-size: rem; /* Adjust font size for the greeting */
+  font-size: rem; 
   font-family: "Martian Mono", monospace;
   color: white;
   margin-left: 4%;
-  animation: fadeIn 1s ease-out; /* Add fade-in effect for greeting */
+  animation: fadeIn 1s ease-out;
 }
 
 .letter {
   display: inline-block;
   opacity: 0;
   animation: colorChange 1s forwards;
-  letter-spacing: 6px; /* Adds spacing between the letters */
-  animation-delay: 5s; /* Delay animation for a second to make text appear white first */
+  letter-spacing: 6px; 
+  animation-delay: 5s; 
 }
 
 .bio {
-  font-size: 0.8rem; /* Adjust font size for the greeting */
+  font-size: 0.8rem; 
   font-family: "Martian Mono", monospace;
   color: white;
   margin-left: 4%;
-  margin-bottom: 125px; /* Add space below the greeting */
-  animation: fadeIn 1s ease-out; /* Add fade-in effect for greeting */
+  margin-bottom: 125px; 
+  animation: fadeIn 1s ease-out; 
   margin-right: 60%;
   margin-top: -0.5%;
-  line-height: 1.5; /* Adjust the number as needed */
+  line-height: 1.5;
 }
 
 
 .profile-image {
-  width: 550px;  /* Set a fixed size for the image */
-  height: 550px; /* Set the same size for height */
-  border-radius: 50%; /* Makes the image a circle */
+  width: 550px; 
+  height: 550px; 
+  border-radius: 50%; 
   position: absolute;
-  object-fit: cover; /* Ensures the image is fully contained within the circle */
-  margin-left: 65%; /* Space between the text and image */
+  object-fit: cover; 
+  margin-left: 65%; 
   border-style: solid;
   border-width: 8px;
-  animation: pulseGlow 2s infinite alternate; /* Breathing effect */
-  margin-top: -205%;
+  animation: pulseGlow 2s infinite alternate; 
+  margin-top: -215%;
 }
 
 .hire-button {
-  padding: 10px 10px; /* Adjust the padding to make the button smaller */
-  background-color: #1f2228; /* Mint green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 50px; /* Pill shape */
-  font-size: 1rem; /* Smaller font size */
-  font-family: "Martian Mono", monospace; /* Matching font */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; /* Subtle glow */
-  max-width: 200px; /* Limit the maximum width of the button */
-  width: auto; /* Make the width auto-adjust to the content */
-  text-align: center; /* Center the text */
+  padding: 10px 10px; 
+  background-color: #1f2228; 
+  color: white; 
+  border: none; 
+  border-radius: 50px; 
+  font-size: 1rem; 
+  font-family: "Martian Mono", monospace; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; 
+  max-width: 200px; 
+  width: auto; 
+  text-align: center; 
   margin-left: 4%;
   margin-top: -5%;
   margin-bottom: 10%;
 }
 
-.cardcontainer {
-  margin-top: 45%;
-  position: absolute;
-  height: 300px;
-  width: 1500px;
-  top: 60px;
-  left: calc(18% - 300px);
-  display: flex;
-}
-
-.card {
-  display: flex;
-  height: 280px;
-  width: 200px;
-  background-color: #17141d;
-  border-radius: 10px;
-  box-shadow: -0.5rem 0 1rem #99fd99;
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
-
-.card:not(:first-child) {
-    margin-left: -50px;
-}
-
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-}
-
-.title {
+.hire-style {
   color: white;
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
-
-.bar {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  height: 5px;
-  width: 150px;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%;
-}
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(90deg, rgb(7, 217, 0) 0%, rgb(14, 217, 0) 65%, rgb(34, 255, 0) 100%);
-  transition: 0.6s ease-out;
-}
-
-.card:hover .filledbar {
-  width: 100%;
-  transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
-}
-
-.stroke {
-  stroke: white;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
+  text-decoration: none;
 }
 
 .hire-button:hover {
-  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; /* Glowing effect on hover */
-  transform: scale(1.1); /* Slight scale up effect on hover */
+  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; 
+  transform: scale(1.1); 
 }
 
 .hire-button:focus {
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 .title2 {
   color: #98ff98;
   margin-top: -3%;
   margin-left: 4%;
-  letter-spacing: 2px; /* Adds spacing between the letters */
-  animation-delay: 0.5s; /* Slight delay for animation */
+  letter-spacing: 2px;
+  animation-delay: 0.5s; 
+  font-family: "Martian Mono", monospace;
 }
 
 .L-icon {
-  width: 150px;  /* Set a fixed width */
-  height: 150px; /* Set a fixed height */
-  object-fit: contain; /* Ensures images scale without distortion */
+  width: 150px;  
+  height: 150px;
+  object-fit: contain; 
 }
 
 
 .crm-button {
-  padding: 10px 10px; /* Adjust the padding to make the button smaller */
-  background-color: #1f2228; /* Mint green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 50px; /* Pill shape */
-  font-size: 1rem; /* Smaller font size */
-  font-family: "Martian Mono", monospace; /* Matching font */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; /* Subtle glow */
-  max-width: 200px; /* Limit the maximum width of the button */
-  width: auto; /* Make the width auto-adjust to the content */
-  text-align: center; /* Center the text */
-  margin-left: -26.5%;
-  margin-top: 3%;
+  position: absolute;
+  padding: 10px 10px; 
+  background-color: #1f2228; 
+  color: white;
+  border: none; 
+  border-radius: 50px; 
+  font-size: 1rem;
+  font-family: "Martian Mono", monospace;
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; 
+  max-width: 200px; 
+  width: auto; 
+  text-align: center; 
+  margin-left: -29%;
+  margin-top: -1%;
 }
 
 .crm-button:hover {
-  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; /* Glowing effect on hover */
-  transform: scale(1.2); /* Slight scale up effect on hover */
+  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; 
+  transform: scale(1.2);
 }
 
 .crm-button:focus {
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 .web-button {
-  padding: 10px 10px; /* Adjust the padding to make the button smaller */
-  background-color: #1f2228; /* Mint green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 50px; /* Pill shape */
-  font-size: 1rem; /* Smaller font size */
-  font-family: "Martian Mono", monospace; /* Matching font */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; /* Subtle glow */
-  max-width: 200px; /* Limit the maximum width of the button */
-  width: auto; /* Make the width auto-adjust to the content */
-  text-align: center; /* Center the text */
-  margin-left: -28.5%;
-  margin-top: 3%;
+  position: absolute;
+  padding: 10px 10px; 
+  background-color: #1f2228; 
+  color: white; 
+  border: none; 
+  border-radius: 50px; 
+  font-size: 1rem; 
+  font-family: "Martian Mono", monospace; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; 
+  max-width: 200px;
+  width: auto; 
+  text-align: center; 
+  margin-left: 9.25%;
+  margin-top: 124%;
 }
 
 .web-button:hover {
-  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; /* Glowing effect on hover */
-  transform: scale(1.2); /* Slight scale up effect on hover */
+  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; 
+  transform: scale(1.2); 
 }
 
 .web-button:focus {
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 .cotw-button {
   position: absolute;
-  padding: 10px 10px; /* Adjust the padding to make the button smaller */
-  background-color: #1f2228; /* Mint green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 50px; /* Pill shape */
-  font-size: 1rem; /* Smaller font size */
-  font-family: "Martian Mono", monospace; /* Matching font */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; /* Subtle glow */
-  max-width: 200px; /* Limit the maximum width of the button */
-  width: auto; /* Make the width auto-adjust to the content */
-  text-align: center; /* Center the text */
-  margin-top: 78%;
+  padding: 10px 10px; 
+  background-color: #1f2228; 
+  color: white; 
+  border: none; 
+  border-radius: 50px; 
+  font-size: 1rem; 
+  font-family: "Martian Mono", monospace; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; 
+  max-width: 200px; 
+  width: auto; 
+  text-align: center; 
+  margin-top: 83%;
   margin-left: 10%;
 }
 
 .cotw-button:hover {
-  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white; /* Glowing effect on hover */
-  transform: scale(1.2); /* Slight scale up effect on hover */
+  box-shadow: 0 0 10px 5px white, 0 0 15px 10px white, 0 0 20px 15px white;
+  transform: scale(1.2); 
 }
 
 .cotw-button:focus {
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 
 .image-row {
   display: flex;
-  gap: 12%; /* Add space between the images */
-  margin-top: 30%; /* Adjust top margin as needed */
+  gap: 12%; 
+  margin-top: 30%; 
   margin-bottom: 5%;
 }
 
 .image {
-  width: 250px;  /* Set the same width for all images */
-  height: 250px; /* Set the same height for all images */
-  object-fit: cover; /* Ensure the images fit the container without distortion */
-  border-radius: 225px; /* Optional: round the corners */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
-  animation: slideIn 1.5s ease-out forwards; /* Animation to slide in */
+  width: 250px;  
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 225px;
+  transition: all 0.3s ease-in-out; 
+  animation: slideIn 1.5s ease-out forwards;
 }
 
 @keyframes slideIn {
   from {
-    margin-left: -100%; /* Start off-screen to the left */
+    margin-left: -100%; 
   }
   to {
-    margin-left: 2%; /* End position at 5% margin-left */
+    margin-left: 2%; 
   }
 }
 
 
 .image:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px 7px rgba(152, 255, 152, 0.7); /* Enhanced mint green shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px 7px rgba(152, 255, 152, 0.7);
 }
 
 .image2 {
-  width: 425px;  /* Set the same width for all images */
-  height: 400px; /* Set the same height for all images */
-  object-fit: cover; /* Ensure the images fit the container without distortion */
-  border-radius: 200px; /* Optional: round the corners */
-  margin-top: 17%; 
+  width: 425px;  
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 200px; 
+  margin-top: 20%;
   margin-left: 2%;
-  animation: pulseGlow 6s infinite alternate; /* Breathing effect */
+  animation: pulseGlow 6s infinite alternate; 
   display: flex;
 }
 
 .certH2 {
   position: absolute;
-  font-size: 3rem;  /* Adjust the font size */
+  font-size: 3.5rem;  
   font-weight: bold;
   text-align: left;
-  color: #fff;  /* Adjust the text color */
-  margin-left: 36%; /* Adjust if necessary */
-  margin-top: -105%;
+  color: #fff;  
+  margin-left: 32%; 
+  margin-top: -118%;
   animation: colorChange 1s forwards;
-  letter-spacing: 2px; /* Adds spacing between the letters */
-  animation-delay: 0.5s; /* Slight delay for animation */
+  letter-spacing: 2px; 
+  animation-delay: 0.5s; 
+  font-family: "Martian Mono", monospace;
 }
 
 
 .projectsStyle {
   position: absolute;
-  font-size: 3rem;  /* Adjust the font size */
+  font-size: 3.5rem;  
   font-weight: bold;
   text-align: left;
-  color: #fff;  /* Adjust the text color */
-  margin-left: 42%; /* Adjust if necessary */
+  color: #fff;  
+  margin-left: 40%;
   animation: colorChange 1s forwards;
-  letter-spacing: 2px; /* Adds spacing between the letters */
-  animation-delay: 0.5s; /* Slight delay for animation */
-  margin-top: 1%;
+  letter-spacing: 2px; 
+  animation-delay: 0.5s; 
+  margin-top: 5%;
+  font-family: "Martian Mono", monospace;
+}
+
+.body-font {
+  font-family: 'Montserrat', sans-serif;
 }
 
 
 .project-head1 {
   text-decoration: underline;
+  text-decoration-color: #98ff98;
   font-size: 2.5rem;
-  font-family: "Martian Mono", monospace;
   position: absolute;
-  margin-left: 35%;
-  color: #1f2228;
-  margin-top: 8.5%;
-  animation: pulseTGlow 2.5s ease-out infinite;
+  margin-left: 36%;
+  color: #ffffff;
+  margin-top: 14%;
 }
 
 @keyframes pulseTGlow {
@@ -442,67 +357,48 @@ svg {
 
 .technology {
   position: absolute;
-  font-family: "Martian Mono", monospace;
-  font-size: 1.5rem;
-  color: white; /* Initial text color */
-  margin-left: 30%;
-  margin-top: 11.75%;
+  font-size: 1.25rem;
+  color: #98ff98; 
+  margin-left: 45%;
+  margin-top: 16.5%;
 }
 
 
 .scroll-container {
   position: absolute;
-  width: 20%;
-  height: 10%; /* Set the container height to make it smaller */
-  overflow: hidden;
-  color: #fff; /* White text */
-  font-size: 1rem; /* Adjust font size as needed */
-  margin-left: 41.5%;
-  margin-top: 11%;
+  width: 30%;
+  height: 10%; 
+  color: #fff; 
+  margin-left: 35.5%;
+  margin-top: 17%;
 }
 
 .scroll-text {
-  font-family: "Martian Mono", monospace;
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll 18s linear infinite;
   font-style: italic;
-  color: #ff9900;
-  -webkit-text-stroke: #146eb4;
+  color: #ffffff;
+  -webkit-text-stroke: #98ff98;
   -webkit-text-stroke-width: 0.4px;
- 
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  font-size: 1.2rem; 
 }
 
 .aws-service {
-  color: #1f2228;
-  -webkit-text-stroke-color: #98ff98;
-  -webkit-text-stroke-width: 0.25px;
+  color: #98ff98;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   
 }
 
 .pushed-paragraph {
-  margin-left: 65px;  /* Adjust the value to push it more to the right */
+  margin-left: 75px; 
 }
 
 .project-details {
-  font-family: "Martian Mono", monospace;
   position: absolute;
   padding: 30px;
   border-radius: 10px;
-  margin-right: 20%;
-  margin-left: 23%;
-  margin-top: 14%;
+  margin-right: 10%;
+  margin-left: 25%;
+  margin-top: 17%;
 }
 
 .project-bullets {
@@ -510,72 +406,61 @@ svg {
 }
 
 .project-bullets li {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffffff;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .project-head2 {
   text-decoration: underline;
+  text-decoration-color: #98ff98;
   font-size: 2.5rem;
-  font-family: "Martian Mono", monospace;
   position: absolute;
-  margin-left: 35%;
-  margin-top: 48%;
-  color: #1f2228;
-  animation: pulseTGlow 2.5s ease-out infinite;
+  margin-left: 36%;
+  margin-top: 54%;
+  color: #ffffff;
 }
 
 .languages {
   position: absolute;
-  font-family: "Martian Mono", monospace;
-  font-size: 1.5rem;
-  color: white; 
-  margin-left: 30%;
-  margin-top: 51%;
+  font-size: 1.25rem;
+  color: #98ff98; 
+  margin-left: 45%;
+  margin-top: 56.5%;
 }
 
 .scroll-container2 {
   position: absolute;
-  width: 20%;
+  width: 30%;
   height: 10%; 
-  overflow: hidden;
-  color: #fff;
-  font-size: 1rem; 
-  margin-left: 39%;
-  margin-top: 50.20%;
+  color: #fff; 
+  margin-left: 36%;
+  margin-top: 57%;
 }
 
 .scroll-text2 {
-  font-family: "Martian Mono", monospace;
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll 12s linear infinite;
   font-style: italic;
   color: white;
   -webkit-text-stroke: #98ff98;
   -webkit-text-stroke-width: 0.4px;
- 
+  font-size: 1.2rem;
 }
 
 
-.project-details2 {
-  font-family: "Martian Mono", monospace;
+.project-details2 {  
   position: absolute;
   padding: 30px;
   border-radius: 10px;
-  margin-right: 20%;
-  margin-left: 23%;
-  margin-top: 51%;
+  margin-right: 10%;
+  margin-left: 25%;
+  margin-top: 56%;
 }
 
 .highlight {
-  color: #1f2228;
-  -webkit-text-stroke-color: #98ff98;
-  -webkit-text-stroke-width: 0.25px;
+  color: #98ff98;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .project-bullets2 {
@@ -583,18 +468,12 @@ svg {
 }
 
 .project-bullets2 li {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffffff;
-  margin-top: 8%;
+  margin-top: 7%;
 }
 
-
-.project-images {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-}
 
 .project-images .image2 {
   width: 30%;
@@ -604,52 +483,46 @@ svg {
 
 .project-head3 {
   text-decoration: underline;
+  text-decoration-color: #98ff98;
   font-size: 2.5rem;
-  font-family: "Martian Mono", monospace;
   position: absolute;
-  margin-left: 30%;
-  color: #1f2228;
-  margin-top: 87%;
-  animation: pulseTGlow 2.5s ease-out infinite;
+  margin-left: 34%;
+  color: #ffffff;
+  margin-top: 94%;
 }
 
 .languages2 {
   position: absolute;
-  font-family: "Martian Mono", monospace;
-  font-size: 1.5rem;
-  color: white; 
-  margin-left: 30%;
-  margin-top: 90%;
+  font-size: 1.25rem;
+  color: #98ff98; 
+  margin-left: 47%;
+  margin-top: 96.5%;
 }
 
 .scroll-container3 {
   position: absolute;
-  width: 20%;
-  height: 10%; 
-  overflow: hidden;
+  width: 30%;
+  height: 10%;
   color: #fff; 
-  font-size: 1rem; 
-  margin-left: 39%;
-  margin-top: 89.2%;
+  margin-left: 43%;
+  margin-top: 97%;
 }
 
 
 .project-details3 {
-  font-family: "Martian Mono", monospace;
   position: absolute;
   padding: 30px;
   border-radius: 10px;
-  margin-right: 20%;
-  margin-left: 23%;
-  margin-top: 89%;
+  margin-right: 10%;
+  margin-left: 25%;
+  margin-top: 96%;
 }
 
 .highlight2 {
-  color: #1f2228;
-  -webkit-text-stroke-color: #98ff98;
-  -webkit-text-stroke-width: 0.25px;
+  color: #98ff98;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-bullets3 {
@@ -657,7 +530,8 @@ svg {
 }
 
 .project-bullets3 li {
-  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffffff;
   margin-top: 8%;
@@ -737,10 +611,10 @@ svg {
         &:after {
           content: "";
           position: absolute;
-          top: -20px; /* Adjusted for even smaller size */
+          top: -20px; 
           left: 0px;
           width: 100%;
-          height: 20px; /* Adjusted for even smaller size */
+          height: 20px; 
           background: #f2f2f2;
           transform-origin: bottom;
           transform: skewX(45deg);
@@ -785,11 +659,11 @@ svg {
 @keyframes colorChange {
   0% {
     opacity: 1;
-    color: white; /* Start with white */
+    color: white; 
   }
   100% {
     opacity: 1;
-    color: #98ff98; /* Transition to mint green */
+    color: #98ff98;
   }
 }
 
@@ -802,32 +676,32 @@ svg {
   }
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
   .centered-text {
-    font-size: 2.5rem; /* Smaller font for medium screens */
+    font-size: 2.5rem; 
     letter-spacing: 4px;
     margin-left: 0;
   }
 
   .greeting {
-    font-size: 1.8rem; /* Adjust greeting font size */
+    font-size: 1.8rem; 
     margin-bottom: 10px;
   }
 
   .App {
-    padding: 20px; /* More padding for smaller screens */
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .centered-text {
-    font-size: 2rem; /* Even smaller font size for small screens */
+    font-size: 2rem; 
     letter-spacing: 3px;
   }
 
   .greeting {
-    font-size: 1.5rem; /* Smaller greeting font */
+    font-size: 1.5rem; 
   }
 }
 

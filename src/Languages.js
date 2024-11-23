@@ -1,5 +1,5 @@
 import React from 'react';
-import './Languages.css'; // Optional, for styling
+import './Languages.css'; 
 
 
 const Lcards = () => {
