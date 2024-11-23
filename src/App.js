@@ -108,7 +108,7 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
 </div>
 <button 
         className="cotw-button" 
-        onClick={() => window.open("https://pktaz.github.io/Countries-of-The-World/world", "_blank")}
+        onClick={() => window.open("https://pktaz.github.io/Countries-of-The-World/", "_blank")}
       >
         View App
       </button>
