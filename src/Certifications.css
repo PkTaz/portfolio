@@ -1,0 +1,49 @@
+.certH2 {
+    position: absolute;
+    font-size: 3.5rem;  
+    font-weight: bold;
+    text-align: left;
+    color: #fff;  
+    margin-left: 32%; 
+    margin-top: -118%;
+    animation: colorChange 1s forwards;
+    letter-spacing: 2px; 
+    animation-delay: 0.5s; 
+    font-family: "Martian Mono", monospace;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      opacity: 1;
+      color: white; 
+    }
+    100% {
+      opacity: 1;
+      color: #98ff98;
+    }
+  }
+
+  .image-row {
+    display: flex;
+    gap: 12%; 
+    margin-top: 30%; 
+    margin-bottom: 5%;
+  }
+
+  .image {
+    width: 250px;  
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 225px;
+    transition: all 0.3s ease-in-out; 
+    animation: slideIn 1.5s ease-out forwards;
+  }
+
+  .letter {
+    display: inline-block;
+    opacity: 0;
+    animation: colorChange 1s forwards;
+    letter-spacing: 6px; 
+    animation-delay: 5s; 
+  }
+  
