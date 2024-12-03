@@ -1,4 +1,4 @@
-const MyComponent = () => (
+const Cube = () => (
     <div className="container">
       <div className="cube">
         <div style={{ '--x': -1, '--y': 0 }}>
@@ -53,4 +53,4 @@ const MyComponent = () => (
       </div>
     </div>
   );
-  export default MyComponent;
+  export default Cube;

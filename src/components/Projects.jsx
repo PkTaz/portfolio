@@ -1,4 +1,4 @@
-import './App.css';
+import '../styles/App.css';
 const projects = "Projects";
 const projectsStyle = projects.split("").map((projectsStyle, index) => (
     <span key={index} className="letter" style={{ animationDelay: `${index * 0.3}s` }}>

@@ -42,6 +42,7 @@
     position: absolute;
     left: 20px;
     top: 15px;
+    font-family: "Martian Mono", monospace; 
   }
   
   .bar {
@@ -90,9 +91,63 @@
   svg {
     fill: #17141d;
     stroke-width: 2px;
+
   }
   
   .card:hover .stroke {
     stroke-dashoffset: 100;
     transition: 0.6s ease-out;
   }
+
+  .level {
+    text-decoration: underline;
+    opacity: 0;
+    margin-left: 15%;
+    margin-top: 40%;
+    transition: color 0.4s ease-out; /* Smooth color transition */
+  }
+  
+  .card:hover .level {
+    opacity: 1;
+  }
+  
+  .level.advanced {
+    color: #34eb40; /* Color for Advanced level */
+  }
+  
+  .level.proficient {
+    color: #00d5ff; /* Color for Proficient level */
+  }
+  
+  .level.intermediate {
+    color: #f7d31b; /* Color for Intermediate level */
+  }
+  
+  .level.beginner {
+    color: #ff6b6b; /* Color for Beginner level */
+  }
+
+.card:hover .level {
+  opacity: 1;
+}
+
+.filledbar.advanced {
+  background: linear-gradient(90deg, #34eb40 0%, #0fa30f 65%, #007500 100%);
+}
+
+.filledbar.proficient {
+  background: linear-gradient(90deg, #00d5ff 0%, #0078b8 65%, #004080 100%);
+}
+
+.filledbar.intermediate {
+  background: linear-gradient(90deg, #f7d31b 0%, #d7a312 65%, #a8790b 100%);
+}
+
+.filledbar.beginner {
+  background: linear-gradient(90deg, #ff6b6b 0%, #d14141 65%, #a82020 100%);
+}
+
+.L-icon {
+  margin-top: 5%;
+  height: 15vh;
+}

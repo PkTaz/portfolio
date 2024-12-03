@@ -1,4 +1,4 @@
-import './Certifications.css';
+import '../styles/Certifications.css';
 
 
 const certH2 = "Certifications";

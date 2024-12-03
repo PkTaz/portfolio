@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Lightsaber.css';
+import '../styles/Lightsaber.css';
 
 const Lightsaber = () => {
   const [hue, setHue] = useState(218); // Initialize the hue state
