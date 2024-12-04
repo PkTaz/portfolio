@@ -104,7 +104,7 @@
     opacity: 0;
     margin-left: 15%;
     margin-top: 40%;
-    transition: color 0.4s ease-out; /* Smooth color transition */
+    transition: color 0.4s ease-out; 
   }
   
   .card:hover .level {
@@ -112,19 +112,19 @@
   }
   
   .level.advanced {
-    color: #34eb40; /* Color for Advanced level */
+    color: #34eb40; 
   }
   
   .level.proficient {
-    color: #00d5ff; /* Color for Proficient level */
+    color: #00d5ff; 
   }
   
   .level.intermediate {
-    color: #f7d31b; /* Color for Intermediate level */
+    color: #f7d31b; 
   }
   
   .level.beginner {
-    color: #ff6b6b; /* Color for Beginner level */
+    color: #ff6b6b; 
   }
 
 .card:hover .level {

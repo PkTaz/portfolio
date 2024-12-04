@@ -1,5 +1,3 @@
-import '../styles/Certifications.css';
-
 
 const certH2 = "Certifications";
 const certTitle = certH2.split("").map((certTitle, index) => (

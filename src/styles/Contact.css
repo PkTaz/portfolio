@@ -6,7 +6,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  margin: 10% auto; 
+  margin: 12% auto; 
   font-family: "Martian Mono";
 }
 
@@ -28,16 +28,18 @@
 }
 
 .profile-image2 {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%; 
-  border: 3px solid #98ff98; 
+  width: 5rem;
+  height: 5rem;
+  max-width: 5rem;
+  max-height: 5rem;
+  border-radius: 50%;
+  border: 3px solid #98ff98;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-image2:hover {
-  transform: scale(1.2); 
-  box-shadow: 0 5px 15px rgba(0, 255, 150, 0.6); 
+  transform: scale(1.2);
+  box-shadow: 0 5px 15px rgba(0, 255, 150, 0.6);
 }
 
 .profile-link2 {

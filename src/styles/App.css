@@ -262,12 +262,14 @@ body {
   gap: 12%; 
   margin-top: 30%; 
   margin-bottom: 5%;
+  justify-content: center; 
 }
 
 .image {
-  width: 250px;  
-  height: 250px; 
-  object-fit: cover; 
+  width: 100%;
+  max-width: 250px;  
+  height: auto;  
+  object-fit: cover;  
   border-radius: 225px;
   transition: all 0.3s ease-in-out; 
   animation: slideIn 1.5s ease-out forwards;
@@ -289,7 +291,7 @@ body {
 }
 
 .image2 {
-  width: 425px;  
+  max-width: 425px;  
   height: 400px;
   object-fit: cover; 
   border-radius: 200px; 
@@ -435,7 +437,7 @@ body {
   width: 30%;
   height: 10%; 
   color: #fff; 
-  margin-left: 36%;
+  margin-left: 35.5%;
   margin-top: 57%;
 }
 
@@ -504,7 +506,7 @@ body {
   width: 30%;
   height: 10%;
   color: #fff; 
-  margin-left: 43%;
+  margin-left: 42.5%;
   margin-top: 97%;
 }
 
@@ -567,7 +569,7 @@ body {
     }
 
     div {
-      margin-top: -45%;
+      margin-top: -8%;
       margin-left: 10%;
       position: absolute;
       display: flex;
@@ -677,32 +679,82 @@ body {
 }
 
 
-@media (max-width: 768px) {
-  .centered-text {
-    font-size: 2.5rem; 
-    letter-spacing: 4px;
-    margin-left: 0;
-  }
-
-  .greeting {
-    font-size: 1.8rem; 
-    margin-bottom: 10px;
-  }
-
+@media (max-width: 320px) {
   .App {
-    padding: 20px;
+    padding: 0 5%;  
   }
-}
 
-@media (max-width: 480px) {
+  .navbar {
+    margin-left: 5%; 
+  }
+
+  .header-image {
+    width: 12%; 
+    height: 15%;
+  }
+
   .centered-text {
-    font-size: 2rem; 
-    letter-spacing: 3px;
+    font-size: 3rem;  
+    margin-left: 2%;
   }
 
   .greeting {
     font-size: 1.5rem; 
+    margin-left: 2%;
+  }
+
+  .profile-image {
+    width: 400px;  
+    height: 400px;
+    margin-left: 50%;  
+  }
+
+  .bio {
+    font-size: 0.7rem;  
+    margin-right: 50%;
+  }
+
+  .image-row {
+    gap: 5%;  
+    margin-top: 20%;
+  }
+
+  .image {
+    max-width: 200px;  
+  }
+
+  .hire-button {
+    width: 150px;  
+    margin-left: 2%;
+  }
+
+  .crm-button, .web-button, .cotw-button {
+    width: 150px; 
+  }
+
+  .project-head1, .project-head2 {
+    font-size: 2rem;  
+  }
+
+  .project-details {
+    margin-left: 20%;  
+    margin-right: 5%;
+  }
+
+  .technology {
+    font-size: 1.1rem;  
+    margin-left: 42%;
+  }
+
+  .scroll-container {
+    width: 25%;  
+    margin-left: 36%;
+  }
+
+  .scroll-text {
+    font-size: 1rem;  
   }
 }
+
 
 

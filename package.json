@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
-  "homepage": "https://pktaz.github.io/portfolio/",
+  "homepage": "https://pktaz.github.io/portfolio",
   "main": "index.js",
   "dependencies": {
     "abab": "^2.0.6",
