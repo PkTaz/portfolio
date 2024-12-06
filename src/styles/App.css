@@ -17,29 +17,26 @@ body {
   background: #000;
 }
 
-
-.header-image {
-  position: absolute;
-  margin-left: 2%;
-  left: 0;
-  width: 15%;
-  height: 20%;
-}
-
-
 .navbar {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  margin-left: 48%;
+  position: relative; 
+  top: -5vh;
+  left: 30%; 
+  transform: translateX(-50%); 
+  width: 100%; 
 }
 
 .nav-list {
+  top: 5%;
   list-style-type: none; 
   padding: 0; 
   margin: 0; 
   display: flex;
-  margin-top: 3%;
+  justify-content: center; 
+  gap: 2rem; 
+  flex-wrap: wrap; 
 }
 
 .nav-item {
@@ -111,16 +108,17 @@ body {
 
 
 .profile-image {
-  width: 550px; 
-  height: 550px; 
+  width: 30vw; /* 50% of the viewport width */
+  height: 30vw; /* Maintain the square aspect ratio */
   border-radius: 50%; 
   position: absolute;
   object-fit: cover; 
-  margin-left: 65%; 
   border-style: solid;
   border-width: 8px;
   animation: pulseGlow 2s infinite alternate; 
-  margin-top: -215%;
+  top: 50%; 
+  left: 75%; 
+  transform: translate(-50%, -50%); /* Centers the image */
 }
 
 .hire-button {
