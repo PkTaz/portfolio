@@ -35,6 +35,9 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
   return (
     <div className="App">
       <Header />
+      <div class="profile-wrapper">
+        <img src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} alt="Profile" className="profile-image" />
+        </div>
       <Cube />
         <section id="home" className="home-section">
           <h2 className="greeting">{greeting}</h2>
@@ -42,9 +45,6 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
           <h2 className="jobtitle">{title}</h2>
           <p className="bio">{bio}</p>
         </section>
-        <div class="profile-wrapper">
-        <img src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} alt="Profile" className="profile-image" />
-        </div>
         <button className="hire-button"><a className="hire-style" href="mailto:chapmanw811@gmail.com">Hire Me!</a></button>
         <h2 className='title2'>{titleStyle}</h2>
 
