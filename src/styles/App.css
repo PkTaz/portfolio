@@ -21,7 +21,7 @@ body {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  position: relative; 
+  position: relative; /* Allows for positioning adjustments */
   top: -5vh;
   left: 30%; 
   transform: translateX(-50%); 
@@ -547,8 +547,9 @@ body {
 }
 
 .container {
+  left: 2vh;
+  top: -8vh;
   position: relative;
-  top: -80px;
   transform: skewY(-20deg);
   animation: animate 5s linear infinite;
 
@@ -677,82 +678,225 @@ body {
 }
 
 
-@media (max-width: 320px) {
-  .App {
-    padding: 0 5%;  
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
   }
 
   .navbar {
-    margin-left: 5%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; /* Allows for positioning adjustments */
+    top: -1vh;
+    left: 1vh; 
+    transform: translateX(-50%); 
+    width: 100%; 
   }
-
-  .header-image {
-    width: 12%; 
-    height: 15%;
+  
+  .nav-list {
+    top: 5%;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
   }
-
-  .centered-text {
-    font-size: 3rem;  
-    margin-left: 2%;
+  
+  .nav-item {
+    margin: 0 60px;
   }
-
-  .greeting {
-    font-size: 1.5rem; 
-    margin-left: 2%;
+  
+  .nav-link {
+    font-family: "Martian Mono", monospace;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-block;
+    display: flex-box; 
+    transition: color 0.5s ease, transform 0.3s ease; 
   }
-
+  
   .profile-image {
-    width: 400px;  
-    height: 400px;
-    margin-left: 50%;  
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 10px;
+    border: 4px solid #98ff98;; /* Lighter border for mobile */
+    top: 24vh;
+    left: 23vh;
   }
-
+  .centered-text {
+    color: white; 
+    font-size: 1.5rem; 
+    font-family: "Martian Mono", monospace;
+    letter-spacing: 6px; 
+    margin-bottom: 3px;
+    margin-left: -2vh;
+    margin-right: -6%;
+  }
+  
+  .greeting {
+    font-size: 1rem; 
+    font-family: "Martian Mono", monospace;
+    color: white;
+    margin-left: 1vh;
+    margin-bottom: -10px; 
+    animation: fadeIn 1s ease-out; 
+    margin-top: 22vh;
+  }
+  
+  .jobtitle {
+    position: absolute;
+    font-size: rem; 
+    font-family: "Martian Mono", monospace;
+    color: white;
+    margin-top: 25vh;
+    margin-left: -2vh;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .letter {
+    display: inline-block;
+    opacity: 0;
+    animation: colorChange 1s forwards;
+    letter-spacing: 6px; 
+    animation-delay: 5s; 
+  }
+  
   .bio {
-    font-size: 0.7rem;  
-    margin-right: 50%;
+    font-size: 0.8rem; 
+    font-family: "Martian Mono", monospace;
+    color: white;
+    margin-left: 4vh;
+    margin-bottom: 125px; 
+    animation: fadeIn 1s ease-out; 
+    margin-right: 5vh;
+    margin-top: 35.5vh;
+    line-height: 1.5;
   }
 
   .image-row {
-    gap: 5%;  
-    margin-top: 20%;
-  }
-
-  .image {
-    max-width: 200px;  
+    display: flex;
+    gap: 12%; 
+    margin-top: 30%; 
+    margin-bottom: 5%;
+    justify-content: center; 
   }
 
   .hire-button {
-    width: 150px;  
-    margin-left: 2%;
-  }
-
-  .crm-button, .web-button, .cotw-button {
-    width: 150px; 
-  }
-
-  .project-head1, .project-head2 {
-    font-size: 2rem;  
-  }
-
-  .project-details {
-    margin-left: 20%;  
-    margin-right: 5%;
-  }
-
-  .technology {
-    font-size: 1.1rem;  
-    margin-left: 42%;
-  }
-
-  .scroll-container {
-    width: 25%;  
-    margin-left: 36%;
-  }
-
-  .scroll-text {
-    font-size: 1rem;  
-  }
+  padding: 10px 10px; 
+  background-color: #1f2228; 
+  color: white; 
+  border: none; 
+  border-radius: 50px; 
+  font-size: 1rem; 
+  font-family: "Martian Mono", monospace; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 0 5px 0 #98ff98, 0 0 10px 0 #98ff98, 0 0 15px 0 #98ff98; 
+  max-width: 200px; 
+  width: auto; 
+  text-align: center; 
+  margin-left: 9vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
 }
 
 
+  .certH2 {
+    position: absolute;
+    font-size: 1.5rem;  
+    font-weight: bold;
+    text-align: left;
+    color: #fff;  
+    margin-left: 3vh; 
+    margin-top: -1vh;
+    animation: colorChange 1s forwards;
+    letter-spacing: 2px; 
+    animation-delay: 0.5s; 
+    font-family: "Martian Mono", monospace;
+  }
+  
 
+.container {
+  position: relative;
+  top: 34vh;
+  transform: skewY(-20deg);
+  animation: animate 5s linear infinite;
+  left: 15vh;
+
+  .cube {
+    position: relative;
+    z-index: 2;
+
+    &:nth-child(2) {
+      z-index: 1;
+      translate: -30px -30px; 
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+      translate: 30px 30px; 
+    }
+
+    div {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 8px; 
+      translate: calc(-40px * var(--x)) calc(-30px * var(--y)); 
+      
+      span {
+        position: relative;
+        display: inline-block;
+        width: 30px;  
+        height: 30px; 
+        background: #dcdcdc;
+        z-index: calc(1 * var(--i));
+        transition: 5.0s;
+        
+        &:hover {
+          transition: 0s;
+          background: #ef4149;
+          filter: drop-shadow(0 0 30px #ef4149);
+          
+          &:before, 
+          &:after {
+            transition: -5s;
+            background: #ef4149;
+          }
+        }
+        
+        &:before {
+          content: "";
+          position: absolute;
+          left: -20px; 
+          width: 20px; 
+          height: 100%;
+          background: #fff;
+          transform-origin: right;
+          transform: skewY(45deg);
+          transition: 3.5s;
+        }
+        
+        &:after {
+          content: "";
+          position: absolute;
+          top: -20px; 
+          left: 0px;
+          width: 100%;
+          height: 20px; 
+          background: #f2f2f2;
+          transform-origin: bottom;
+          transform: skewX(45deg);
+          transition: 2.5s;
+        }
+      }
+    }
+  }
+}
+
+}

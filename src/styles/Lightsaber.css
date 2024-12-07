@@ -200,3 +200,14 @@ input#lightsaberHue::-moz-range-thumb {
     border-radius: 50%;
     background: hsl(var(--lightsaber-hue), 100%, 50%);
 }
+
+@media (max-width: 767px) {
+    .lightsaber {
+        display: none; /* Completely hide the lightsaber on small screens */
+    }
+}
+
+.range-slider {
+    display: none;
+    }
+

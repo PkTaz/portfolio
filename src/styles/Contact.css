@@ -55,19 +55,7 @@
   color: #fff;
 }
 
-.phone-number {
-  font-family: 'Montserrat' sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  color: rgb(7, 217, 0); 
-  margin-right: -62%;
-  margin-top: -38%; 
-  text-shadow: 0 0 5px rgba(7, 217, 0, 0.7), 0 0 10px rgba(14, 217, 0, 0.5); 
-  opacity: 0; 
-  transform: translateY(-10px); 
-  transition: opacity 0.4s ease, transform 0.4s ease; 
-}
+
 
 .card2:hover .phone-number {
   opacity: 1; 
@@ -131,5 +119,11 @@
   }
   100% {
     text-shadow: 0 0 3px #98ff98, 0 0 5px #98ff98, 0 0 7px #98ff98;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .emptybar2 {
+display: none;
   }
 }

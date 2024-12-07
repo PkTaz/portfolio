@@ -9,9 +9,6 @@ const Contact = () => {
       <a href="https://github.com/PkTaz" class="profile-link2" target="_blank">
         @PkTaz
       </a>
-      <div className="contact-info">
-      <p className="phone-number">(517) 438-6578</p>
-      </div>
       <div className="bar2">
         <div className="emptybar2"></div>
         <div className="filledbar2"></div>
