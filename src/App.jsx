@@ -42,10 +42,11 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
           <h2 className="jobtitle">{title}</h2>
           <p className="bio">{bio}</p>
         </section>
+        <img src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} alt="Profile" className="profile-image" />
       
         <button className="hire-button"><a className="hire-style" href="mailto:chapmanw811@gmail.com">Hire Me!</a></button>
         <h2 className='title2'>{titleStyle}</h2>
-        <img src={`${process.env.PUBLIC_URL}/assets/profilep.jpeg`} alt="Profile" className="profile-image" />
+
       <Lcards />
       
         <h2 className="certH2">{certTitle}</h2>

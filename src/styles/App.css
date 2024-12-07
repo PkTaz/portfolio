@@ -678,7 +678,7 @@ body {
 }
 
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 932px) {
   body {
     text-align: center;
   }
@@ -721,12 +721,14 @@ body {
   }
   
   .profile-image {
+    position: absolute; /* Ensure positioning is absolute for centering */
     width: 150px;
     height: 150px;
     margin: 20px 10px;
-    border: 4px solid #98ff98;; /* Lighter border for mobile */
-    top: 24vh;
-    left: 23vh;
+    border: 4px solid #98ff98; /* Lighter border for mobile */
+    top: 22.5%; /* Position relative to the viewport */
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Adjust the image to truly center it */
   }
   .centered-text {
     color: white; 
