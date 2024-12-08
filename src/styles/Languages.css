@@ -4,7 +4,7 @@
     height: 300px;
     width: 1400px;
     top: 60px;
-    left: calc(18% - 100px);
+    left: calc(18% - 300px);
     display: flex;
     font-family: "Martian Mono";
   }
