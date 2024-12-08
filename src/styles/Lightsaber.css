@@ -22,7 +22,7 @@ h1 {
   .lightsaber {
     position: fixed;
     top: 80%; /* Initially at the center of the page */
-    left: 94%;
+    left: 93.5%;
     transform: translate(-50%, -50%); /* Center the lightsaber */
     z-index: 1;
     height: 50%; /* Reduced size */
@@ -205,9 +205,13 @@ input#lightsaberHue::-moz-range-thumb {
     .lightsaber {
         display: none; /* Completely hide the lightsaber on small screens */
     }
-}
+
 
 .range-slider {
     display: none;
     }
 
+    .range-slider-wrapper {
+    display: none;
+    }
+}

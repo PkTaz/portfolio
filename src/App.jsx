@@ -47,11 +47,7 @@ const titleStyle = title2.split("").map((titleStyle, index) => (
         </section>
         <button className="hire-button"><a className="hire-style" href="mailto:chapmanw811@gmail.com">Hire Me!</a></button>
         <h2 className='title2'>{titleStyle}</h2>
-
       <Lcards />
-      
-        <h2 className="certH2">{certTitle}</h2>
-      
       <Certifications />
       <Lightsaber />
     <Projects />
